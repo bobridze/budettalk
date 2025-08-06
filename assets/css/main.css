@@ -66,6 +66,16 @@ body {
   font-family: var(--default-font);
 }
 
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-only {
+        display: inline;
+    }
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
