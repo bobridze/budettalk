@@ -491,15 +491,23 @@
             <!-- URL сторінки подяки -->
             <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
+            <!-- Поле Ім'я -->
+            <input type="text" name="name" placeholder="Ваше ім’я" required style="padding: 10px; font-size: 16px;">
+
+            <!-- Поле Телефон -->
             <input type="tel" name="phone" placeholder="Ваш номер телефону" required pattern="^\+?[0-9\s\-\(\)]{7,20}$" style="padding: 10px; font-size: 16px;">
 
+            <!-- Приховане поле для анти-бота -->
             <input type="checkbox" name="botcheck" style="display: none;">
 
+            <!-- Кнопка Надіслати -->
             <button type="submit" style="padding: 10px; background-color: #5FCF80; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background-color 0.2s;">
                 Надіслати
             </button>
+
         </form>
     </section>
+
 
 
 
