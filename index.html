@@ -481,23 +481,27 @@
 
 
     </main>
-    <h2 style="text-align: center;">Залишити заявку:</h2>
+    <h2 style="text-align: center;">Залишіть заявку і ми Вам зателефонуємо:</h2>
     <!-- Контактна форма -->
     <section id="contact-form" style="margin-top: 10px; margin-bottom: 10px; display: flex; justify-content: center;">
-        <form action="https://api.web3forms.com/submit" method="POST" style="max-width: 500px; width: 100%; display: flex; flex-direction: column; gap: 10px;">
+        <form action="https://api.web3forms.com/submit" method="POST" target="_blank" style="max-width: 500px; width: 100%; display: flex; flex-direction: column; gap: 10px;">
 
-            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="hidden" name="access_key" value="ac6f0b1a-c760-4538-859a-9f8237bfe5dd">
 
-            <input type="text" name="name" placeholder="Ваше імʼя" required>
-            <input type="email" name="email" placeholder="Ваш email" required>
-            <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+            <!-- URL сторінки подяки -->
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+            <input type="tel" name="phone" placeholder="Ваш номер телефону" required pattern="^\+?[0-9\s\-\(\)]{7,20}$" style="padding: 10px; font-size: 16px;">
 
             <input type="checkbox" name="botcheck" style="display: none;">
-            <button type="submit" style="padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background-color 0.2s;">
+
+            <button type="submit" style="padding: 10px; background-color: #5FCF80; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background-color 0.2s;">
                 Надіслати
             </button>
         </form>
     </section>
+
+
 
 
     <footer id="footer" class="footer position-relative light-background">
